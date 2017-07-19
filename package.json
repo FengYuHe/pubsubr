@@ -1,0 +1,28 @@
+{
+  "name": "pubsubr",
+  "version": "0.0.1",
+  "description": "pub and sub to loopback components",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FengYuHe/pubsubr.git"
+  },
+  "keywords": [
+    "pub",
+    "sub",
+    "looback"
+  ],
+  "author": "FengYuHe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FengYuHe/pubsubr/issues"
+  },
+  "homepage": "https://github.com/FengYuHe/pubsubr#readme",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "mqtt": "^2.9.1"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "EventLog",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true
+    },
+    "uid": {
+      "type": "string"
+    },
+    "oid": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "action": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "date",
+      "defaultFn": "now"
+    },
+    "updatedAt": {
+      "type": "date",
+      "defaultFn": "now"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
