@@ -4,7 +4,7 @@
   "description": "pub and sub to loopback components",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "ava"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,8 @@
     "lodash": "^4.17.4",
     "mqtt": "^2.9.1",
     "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "ava": "^0.21.0"
   }
 }
