@@ -31,7 +31,6 @@ const client = new pubsubr.client('mqtt://test.mosquitto.org', 'http://0.0.0.0:3
 
 ```json
 {
-    {
   "_meta": {
     "sources": [
       "loopback/common/models",
