@@ -6,7 +6,5 @@ node_js:
 cache:
   directories:
     - node_modules
-before_install:
-  - npm install
-after_script:
-  - npm run coverage
+after_success:
+  - './node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls'

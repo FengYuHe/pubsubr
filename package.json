@@ -4,7 +4,8 @@
   "description": "pub and sub to loopback components",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "nyc ava",
+    "report": "nyc report --reporter=html"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,6 @@
   },
   "devDependencies": {
     "ava": "^0.21.0",
-    "coveralls": "^2.13.1"
+    "nyc": "^11.0.3"
   }
 }
