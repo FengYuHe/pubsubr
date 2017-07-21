@@ -1,5 +1,6 @@
 # pubsubr
 [![Build Status](https://travis-ci.org/FengYuHe/pubsubr.svg?branch=master)](https://travis-ci.org/FengYuHe/pubsubr)
+[![Coverage Status](https://coveralls.io/repos/github/FengYuHe/pubsubr/badge.svg?branch=master)](https://coveralls.io/github/FengYuHe/pubsubr?branch=master)
 
 pub and sub to loopback
 
