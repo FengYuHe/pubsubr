@@ -69,12 +69,14 @@ const client = new pubsubr.client('mqtt://test.mosquitto.org', 'http://0.0.0.0:3
 
 ### pubsubr
 **pubsubr.server(options, model)**
+
 create pubsubr server
 
 * `options` connect to `mosquitto` ro `mosca`, `String`: `mqtt://test.mosquitto.org` , `Object`: `{host: 'localhost', port: '1883'}`
 * `model` - `EventLog`，用于客户端重连或重新运行获取丢失的`publish`，会使用模型的`create`创建一条数据，为`null`不创建数据
 
 **pubsubr.client(options, api)**
+
 create pubsubr client
 
 * `options` connect to `mosquitto` ro `mosca`, `String`: `mqtt://test.mosquitto.org` , `Object`:
@@ -84,6 +86,7 @@ create pubsubr client
 
 ### server
 **server.publish(topic, message, [options], [callback])**
+
 Publish a message to a topic
 
 * `topic` is the topic to publish to, `String`
@@ -96,6 +99,7 @@ Publish a message to a topic
 
 ### client
 **client.subscribe(topic, [options], handler)**
+
 Subscribe to a topic or topics
 
 * `topic` is a `String` topic of subscribe to topics to subscribe to. It can also be an object, it has as object keys the topic name and as value the QoS, like `{'test1': 0, 'test2': 1}`. MQTT topic wildcard characters are supported (`+` - for single level and `#` - for multi level)
@@ -110,6 +114,7 @@ Subscribe to a topic or topics
 
         
 **unsubscribe(topic, [callback])**
+
 Unsubscribe from a topic or topics
 
 * topic is a `String` topic or an `array` of topics to unsubscribe from
