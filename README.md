@@ -15,7 +15,7 @@ $ npm install --save pubsubr
 ### server
 ```js
 const pubsubr = require('pubsubr');
-const client = new pubsubr.server('mqtt://test.mosquitto.org', app.models.EventLog);
+const server = new pubsubr.server('mqtt://test.mosquitto.org', app.models.EventLog);
 ```
 
 ### client
